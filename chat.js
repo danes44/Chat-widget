@@ -7,7 +7,7 @@ $(document).ready(function() {
             if(message !== '')
             {
                   let elements=`<div class="col-12 mb-3">
-                              <span class="px-3 pt-2 pb-4 chat-bubble float-end text-white position-relative" style="background-color: #38435F; min-width: 8%; max-width: 70%; border-radius: .5rem!important;">
+                              <span class="px-3 pt-2 pb-4 chat-bubble float-end text-white position-relative" style="background-color: #38435F; min-width: 10%; max-width: 70%; border-radius: .5rem!important;">
                                     ${message}
                                     <span class="text-white-50 position-absolute bottom-0 end-0 me-2 mb-1" style="font-size: .8rem;">
                                           ${moment().format('LT')}
@@ -46,8 +46,8 @@ $(document).ready(function() {
 
       $('#textbox-chat').keypress(function (e) {
             if (e.which == 13) {
-            $(this).blur();
-            sendChat()
+                  // $(this).blur();
+                  sendChat()
             }
             
             // $(this).focus();

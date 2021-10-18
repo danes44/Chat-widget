@@ -12,13 +12,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
     
 </head>
 <body>
-    <div class="container pt-4">
+    <div class="container-lg px-sm-0 px-md-4 py-md-4 pt-lg-4 pt-xl-4 pt-xxl-4">
         <div class="card border-0 shadow-lg" style="border-radius: .75rem 0 0 .75rem; width: 100%;height: 100%;">
-            <div class="row g-0">
-                <div class="col-4">
+            <div id="card-content-full" class="row g-0">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <img src="assets/bg-group2.png" class="" alt="..." height="560px" style="border-radius: .75rem 0 0 .75rem;object-fit: fill;">
                     <div class="card-img-overlay text-white text-center px-4" style="width: 34%;">
                         <h1 class="card-title fw-bold pt-5">QnA</h1>
@@ -32,9 +34,8 @@
                 </div>
 
                 <!-- Chat Elements -->
-                <div class="col-8">
-                    <div class="card border-0" style="height: 560px;">
-                        
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                    <div id="chat-card" class="card border-0" style="height: 560px;">
                         <div class="card-header py-4 px-4 border-0 " style="background-color: #ffffff;">
                             <div class="row justify-content-center">
                                 <div class="col-1 align-content-center">           
@@ -53,7 +54,7 @@
                             </div>
                         </div>
 
-                        <div id="conversation" class="card-body" style="overflow-x: hidden; overflow-y: auto; background-color: #EBECEF;">
+                        <div id="conversation" class="card-body border-0" style="overflow-x: hidden; overflow-y: auto; background-color: #EBECEF;">
                             <div class="row g-0" id="conversation-container">
                                 <div class="col-12 mb-3">
                                     <span class="px-3 pt-2 pb-4 chat-bubble float-end text-white position-relative" style="background-color: #38435F; min-width: 10%; max-width: 70%; border-radius: .5rem!important;">
@@ -96,6 +97,98 @@
                     </div>
                 </div>
             </div>
+
+            <!-- small devices content -->
+            <div id="card-content-lite" class="">
+                <!-- Chat Elements -->
+                <div id="chat-card" class="card border-0" style="height: 560px;">
+                    <div class="card-header py-4 px-4 border-0 " style="background-color: #ffffff;">
+                        <div class="row justify-content-center">
+                            <div class="col-3 col-sm-3 col-md-1 col-lg-3 align-content-center">           
+                                <img class="rounded-circle text-center" src="assets/Logo Lumintu.svg" alt="" width="50px">
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-10 col-lg-9">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="fw-bold" style="font-size: 1.2rem;">Administrator</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="" style="font-size: .9rem;">Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-1 col-lg-2 text-end">
+                                <button class="navbar-expand-md navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                    <i class="bi bi-list" style="font-size: 35px;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="conversation" class="card-body border-0" style="overflow-x: hidden; overflow-y: auto; background-color: #EBECEF;">
+                        <div class="row g-0" id="conversation-container-small">
+                            <div class="col-12 mb-3">
+                                <span class="px-3 pt-2 pb-4 chat-bubble float-end text-white position-relative" style="background-color: #38435F; min-width: 10%; max-width: 70%; border-radius: .5rem!important;">
+                                    a
+                                    <span class="text-white-50 position-absolute bottom-0 end-0 me-2 mb-1" style="font-size: .8rem;">
+                                        7.30 PM
+                                    </span>
+                                </span>
+                            </div>
+        
+                            <div class="col-12 mb-3">
+                                <span class="px-3 pt-2 pb-4 chat-bubble float-start position-relative" 
+                                style="background-color: #FFFFFF;min-width: 10%; max-width: 70%; border-radius: .5rem!important;">
+                                    asdhaskldnqoiwndasddddddddddddddddddddddddddddddddasdas
+                                    <span class="text-black-50 position-absolute bottom-0 end-0 me-2 mb-1" style="font-size: .8rem;">
+                                        7.30 PM
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="conversation-footer" class="border-0 px-3 py-3" style="border-radius: 0 0 .75rem 0; background-color: #FFFFFF;">
+                        <!-- conversation -->
+                        <div class="row">
+                            <div class="col-9 col-sm-9 col-md-11 col-lg-10 pe-3">
+                                <textarea class="chat-text-area form-control border-0 me-3" 
+                                id="textbox-chat-small" 
+                                rows="1" placeholder="Tulis pesan Anda..."
+                                style="background-color:#FFFFFF"></textarea>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-1 col-lg-2 text-end">
+                                <button class="btn btn-send p-1"  >
+                                    <img src="assets/btnSend.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <img src="assets/bg-group2.png" class="" alt="..." height="560px" style="z-index: -1;object-fit: fill;">
+                    
+                    <div class="offcanvas-body">
+                        <div class="card-img-overlay rounded-0 text-white text-center px-4">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close text-reset text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                            <h1 class="card-title fw-bold pt-3">QnA</h1>
+                            <img src="assets/Logo QnA.svg" class="img-fluid text-center py-5" width="40%" alt="...">
+                            <p class="card-text fw-bold mb-0" style="font-size: 1.6rem;">Webinar Pengenalan Diri</p>
+                            <p class="card-text mt-0">Skyline Event</p>
+                            <p class="card-text fw-bold mb-0" >Rabu, 05 Oktober 2021</p>
+                            <p class="card-text mt-0">10.00 - 11.00 WIB</p>
+                            <p class="card-text fw-bold text-center position-absolute start-50 translate-middle-x bottom-0 pb-3" style="font-size: .8rem;">Lumintu Event</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
           </div>
     </div>
     

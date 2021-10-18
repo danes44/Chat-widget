@@ -3,9 +3,13 @@ $(document).ready(function() {
       //chat send method
       $('.btn-send').click(function() {
             let message=$('.chat-text-area').val() 
+            let message2=$('#textbox-chat-small').val() 
             console.log(message)
+            console.log(message2)
+
             if(message !== '')
             {
+                  message2 = message
                   let elements=`<div class="col-12 mb-3">
                               <span class="px-3 pt-2 pb-4 chat-bubble float-end text-white position-relative" style="background-color: #38435F; min-width: 10%; max-width: 70%; border-radius: .5rem!important;">
                                     ${message}
@@ -18,7 +22,45 @@ $(document).ready(function() {
                   $("#conversation-container").append(elements);
                   message = ''
                   $("#textbox-chat").val('')
+
+                  $("#conversation-container-small").append(elements);
+                  message2 = ''
+                  $("#textbox-chat-small").val('')
             }
+            else{
+                  message = message2
+                  let elements=`<div class="col-12 mb-3">
+                              <span class="px-3 pt-2 pb-4 chat-bubble float-end text-white position-relative" style="background-color: #38435F; min-width: 10%; max-width: 70%; border-radius: .5rem!important;">
+                                    ${message}
+                                    <span class="text-white-50 position-absolute bottom-0 end-0 me-2 mb-1" style="font-size: .8rem;">
+                                          ${moment().format('LT')}
+                                    </span>
+                              </span>
+                        </div>`
+
+                  $("#conversation-container").append(elements);
+                  message = ''
+                  $("#textbox-chat").val('')
+
+                  $("#conversation-container-small").append(elements);
+                  message2 = ''
+                  $("#textbox-chat-small").val('')
+            }
+            // if(message2 !== '')
+            // {
+            //       let elements=`<div class="col-12 mb-3">
+            //                   <span class="px-3 pt-2 pb-4 chat-bubble float-end text-white position-relative" style="background-color: #38435F; min-width: 10%; max-width: 70%; border-radius: .5rem!important;">
+            //                         ${message2}
+            //                         <span class="text-white-50 position-absolute bottom-0 end-0 me-2 mb-1" style="font-size: .8rem;">
+            //                               ${moment().format('LT')}
+            //                         </span>
+            //                   </span>
+            //             </div>`
+
+            //       $("#conversation-container-small").append(elements);
+            //       message2 = ''
+            //       $("#textbox-chat-small").val('')
+            // }
       })
 
       // // Get the input field

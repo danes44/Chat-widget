@@ -35,7 +35,7 @@ html {
 }
 
 .on-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #acacac;
+    background-color: #d4af37;
 }
 
 ::-webkit-scrollbar {
@@ -45,17 +45,17 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ffffff;
-    scrollbar-color: #ffffff;
+    background-color: #d6b33e;
+    scrollbar-color: #d6b33e;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #444;
+    background-color: #ad8e28;
     cursor: pointer;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #a7a7a7;
+    background-color: #a09369;
     -webkit-box-shadow: none !important;
 }
 

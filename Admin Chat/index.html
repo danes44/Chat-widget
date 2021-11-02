@@ -23,8 +23,10 @@
     <div class="container py-4 text-white">
         <div class="d-flex justify-content-between mb-4">
             <div class="d-flex justify-content-start align-items-center">
-                <img src="../assets/Logo QnA.svg" class="img-fluid text-center py-3" width="14%" alt="...">
-                <h2 class="align-middle fw-bold mb-0 ps-3 text-white">Dashboard</h2>
+                <img src="../assets/Logo QnA.svg" class="img-fluid text-center py-3" width="10%" alt="logoQnA">
+                <p class="align-middle fw-bold mb-0 ps-3 text-white" style="font-size: 1.6rem;">
+                  Dashboard Pertanyaan
+                </p>
             </div>
             <div class="align-items-center text-end pt-4">
                 <p class="fw-bold mb-0" style="font-size: 1.6rem;">Webinar Pengenalan Diri</p>
@@ -37,41 +39,21 @@
           <div class="col-6">
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="fw-bold">Daftar Pertanyaan</h5>
-              <h6 id="jumlah-pertanyaan">Jumlah : 12</h6>
+              <h6 id="jumlah-pertanyaan"></h6>
             </div>
             <div class="input-group mb-3">
               <input type="text" id="search-accordion" class="form-control border-0 py-2 px-3 rounded-start" placeholder="Cari pertanyaan..." aria-label="Cari pertanyaan..." aria-describedby="search-addon" style="background-color: white; border-radius: .5rem 0 0 .5rem;"> 
               <button class="input-group-text py-2 border-0 rounded-end" id="search-addon" style="background-color: white; ">
                 <i class="bi bi-search"></i>
               </button>
-              <button class="input-group-text py-2 border-0 rounded text-white" id="filter-btn" style="background-color: transparent; ">
+              <button class="input-group-text py-2 border-0 rounded ms-3" id="filter-btn" style="background-color: white; ">
                 <i class="bi bi-filter" style="font-size: 20px;"></i>
               </button>
             </div>
 
-            <!-- <div class="card border-0 shadow-lg text-black"> -->
-              <div class="accordion accordion-flush shadow-lg text-black rounded-top" id="accordionFlushExample" style="max-height: 560px; overflow-y: auto;">
-                <div class="accordion-item rounded-top" id="accordion-item-1">
-                  <h3 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <div class="align-items-center message" style="width: 90%!important;">
-                        <span id="customer-1" class="customer-name fw-bold mb-2"></span>
-                        <div class="small text-truncate mt-2">Endeavor bachelor but add eat pleasure doubtful sociable. Age forming covered you entered the examine. Blessing scarcely confined her contempt wondered shy. Dashwoods contented sportsmen at up no convinced cordially affection. Am so continued resembled frankness disposing engrossed dashwoods.</div>
-                      </div>
-                    </button>
-                  </h3>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <p>bachelor but add eat pleasure doubtful sociable. Age forming covered you entered the examine. Blessing scarcely confined her contempt wondered shy. Dashwoods contented sportsmen at up no convinced cordially affection. Am so continued resembled frankness disposing engrossed dashwoods.</p> 
-                      <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-outline-primary btn-choose">Pilih</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+              <div class="accordion accordion-flush shadow-lg text-black rounded" id="accordionFlushExample" style="max-height: 560px; overflow-y: auto;">
+              
               </div>
-            <!-- </div> -->
 
             <!-- <div id="accordion">
               <div class="group">
@@ -125,21 +107,20 @@
           <div class="col-6">
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="fw-bold">Daftar Pertanyaan Terpilih</h5>
-              <h6 id="jumlah-pertanyaan-terpilih">Jumlah : 1</h6>
+              <h6 id="jumlah-pertanyaan-terpilih"></h6>
             </div>
             <div class="input-group mb-3">
               <input type="text" id="search-accordion-choose" class="form-control border-0 py-2 px-3 rounded-start" placeholder="Cari pertanyaan..." aria-label="Cari pertanyaan..." aria-describedby="search-addon" style="background-color: white; border-radius: .5rem 0 0 .5rem;"> 
               <button class="input-group-text py-2 border-0 rounded-end" id="search-addon" style="background-color: white; ">
                 <i class="bi bi-search"></i>
               </button>
-              <button class="input-group-text py-2 border-0 rounded text-white" id="filter-btn" style="background-color: transparent; ">
+              <button class="input-group-text py-2 border-0 rounded ms-3" id="filter-btn" style="background-color: white; ">
                 <i class="bi bi-filter" style="font-size: 20px;"></i>
               </button>
             </div>
 
-            <!-- <div class="card border-0 shadow-lg text-black"> -->
-              <div class="accordion accordion-flush shadow-lg text-black rounded-top" id="accordionFlush-choose" style="max-height: 560px; overflow-y: auto;">
-                <div class="accordion-item rounded-top" >
+              <div class="accordion accordion-flush shadow-lg text-black rounded" id="accordionFlush-choose" style="max-height: 560px; overflow-y: auto;">
+                <!-- <div class="accordion-item rounded-top" >
                   <h3 class="accordion-header" id="flush-headingTwo-choose">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo-choose" aria-expanded="false" aria-controls="flush-collapseTwo-choose">
                       <div class="align-items-center " style="width: 90%!important;">
@@ -157,9 +138,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
-
-
+                </div> -->
+                <h4 class="text-white">Belum Ada Pertanyaan Masuk</h4>
               </div>
 
           </div>
@@ -169,20 +149,20 @@
           <div class="col-6">
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="fw-bold">Daftar Pertanyaan Terjawab</h5>
-              <h6 id="jumlah-pertanyaan-terjawab">Jumlah : 1</h6>
+              <h6 id="jumlah-pertanyaan-terjawab"></h6>
             </div>
             <div class="input-group mb-3">
               <input type="text" id="search-accordion-answered" class="form-control border-0 py-2 px-3 rounded-start" placeholder="Cari pertanyaan..." aria-label="Cari pertanyaan..." aria-describedby="search-addon" style="background-color: white; border-radius: .5rem 0 0 .5rem;"> 
               <button class="input-group-text py-2 border-0 rounded-end" id="search-addon" style="background-color: white; ">
                 <i class="bi bi-search"></i>
               </button>
-              <button class="input-group-text py-2 border-0 rounded text-white" id="filter-btn" style="background-color: transparent; ">
+              <button class="input-group-text py-2 border-0 rounded ms-3" id="filter-btn" style="background-color: white; ">
                 <i class="bi bi-filter" style="font-size: 20px;"></i>
               </button>
             </div>
 
-            <div class="accordion accordion-flush shadow-lg text-black rounded-top" id="accordionFlush-answered" style="max-height: 560px; overflow-y: auto;">
-              <div class="accordion-item rounded-top" >
+            <div class="accordion accordion-flush shadow-lg text-black rounded" id="accordionFlush-answered" style="max-height: 560px; overflow-y: auto;">
+              <!-- <div class="accordion-item rounded-top" >
                 <h3 class="accordion-header" id="flush-headingTwo-answered">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo-answered" aria-expanded="false" aria-controls="flush-collapseTwo-answered">
                     <div class="align-items-center " style="width: 90%!important;">
@@ -196,8 +176,7 @@
                     <p>Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve.</p>
                   </div>
                 </div>
-              </div>
-
+              </div> -->
             </div>
 
           </div>
@@ -207,7 +186,7 @@
             <div id="chat-card" class="card border-0 text-black" style="height: 560px;">
               <div class="card-header py-4 px-4 border-0 " style="background-color: #ffffff;">
                   <div class="row justify-content-center">
-                      <div class="col-2 align-content-center">           
+                      <div class="col-2 align-content-center">
                           <img class="rounded-circle text-center" src="../assets/Logo Lumintu.svg" alt="" width="50px">
                       </div>
                       <div class="col-10">
@@ -340,8 +319,9 @@
             }
         })
 
-      //dapet data dari url untuk dapet ID customer 
-        let id_customer = 2;
+      //dapet data dari url untuk dapet ID customer dengan API
+        // let id_customer = [2,3,4,7,11];
+        let id_customer = [];
         let name = ""
         $.ajax({  
             url: url_ip+'/items/customer',  
@@ -352,18 +332,70 @@
             },
             dataType: 'json',  
             success: function(data, textStatus, xhr) { 
-              for(var i = 0; i < data.data.length; i++){
-                if( data.data[i].customer_id === id_customer ){
-                    name = data.data[i].customer_name
+              // for(var i = 0; i < data.data.length; i++){
+                for( var j = 0; j < id_customer.length; j++ ){
+                    name = data.data[j].customer_name
+
+                    $('#accordionFlushExample').append(`
+                    <div class="accordion-item rounded-top" id="accordion-item-${j+1}">
+                      <h3 class="accordion-header" id="heading-${j+1}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-${j+1}"" aria-expanded="false" aria-controls="flush-${j+1}"">
+                          <div class="align-items-center " style="width: 90%!important;">
+                            <span id="customer-${j+1}" class="fw-bold mb-2">${name}</span>
+                            <div class="small text-truncate mt-2">Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve.</div>
+                          </div>
+                        </button>
+                      </h3>
+                      <div id="flush-${j+1}" class="accordion-collapse collapse" aria-labelledby="heading-${j+1}"" data-bs-parent="#accordionFlush">
+                        <div class="accordion-body">
+                          <p>Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve.</p>
+                          <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-outline-primary btn-choose">Pilih</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>`)
                 }
-              }
-              console.log(name)
-              $('#customer-1').text(name)
+                counter()
+              // }
+              // console.log(name)
+              // $('#customer-1').text(name)
             },
             error: function(xhr, textStatus, errorThrown) {  
                 console.log('Error in Database');  
             }
+            
         })
+
+
+        
+
+        //kalau API mati pake ini (dummy data)
+        // let customer_name = ["Michael Robert","Slippery Hand","Dwayne Johnson","McCarty Sulivan","Handsoap Guy","Buddhi Doremi"];
+
+        // for( var j = 0; j < customer_name.length; j++ ){
+        //   // name = data.data[j].customer_name
+        //   $('#accordionFlushExample').append(`
+        //   <div class="accordion-item rounded-top" id="accordion-item-${j+1}">
+        //     <h3 class="accordion-header" id="heading-${j+1}">
+        //       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-${j+1}"" aria-expanded="false" aria-controls="flush-${j+1}"">
+        //         <div class="align-items-center " style="width: 90%!important;">
+        //           <span id="customer-${j+1}" class="fw-bold mb-2">${customer_name[j]}</span>
+        //           <div class="small text-truncate mt-2">Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve.</div>
+        //         </div>
+        //       </button>
+        //     </h3>
+        //     <div id="flush-${j+1}" class="accordion-collapse collapse" aria-labelledby="heading-${j+1}"" data-bs-parent="#accordionFlush">
+        //       <div class="accordion-body">
+        //         <p>Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve.</p>
+        //         <div class="d-grid gap-2">
+        //           <button type="button" class="btn btn-outline-primary btn-choose">Pilih</button>
+        //         </div>
+        //       </div>
+        //     </div>
+        //   </div>`)
+        // }
+              
 
         //search accordion question pool
         $("#search-accordion").on("keyup", function() {
@@ -395,23 +427,31 @@
             counter()
         });
 
-
+        //fungsi pindah accordion ke section terpilih
         $("body").on("click", '.btn-choose', function() {
           var cust_name = $(this).parent().parent().parent().siblings().children().children().children('span').text()
           var cust_message = $(this).parent().parent().parent().siblings().children().children().children('div').text()
           var parent_element = $(this).parent().parent().parent().parent().attr('id')
-          // var parent_class = parent_element.split(" ");
 
-          let elements=`<div class="accordion-item" id="accordion-choose-item-1">
-                          <h3 class="accordion-header" id="flush-headingThree-choose">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree-choose" aria-expanded="false" aria-controls="flush-collapseThree-choose">
+          //get id accordion header number
+          var id_accordion_header = $(this).parent().parent().parent().siblings().attr('id')
+          var id_numb = id_accordion_header.split("-")
+
+          //get customer id number
+          var id_customer = $(this).parent().parent().parent().siblings().children().children()
+
+          var id_accordion = $(this).parent().parent().parent().attr('id')
+          
+          let elements=`<div class="accordion-item" id="${parent_element}">
+                          <h3 class="accordion-header" id="heading-${id_numb[1]}-choose">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-${id_numb[1]}-choose" aria-expanded="false" aria-controls="flush-${id_numb[1]}-choose">
                               <div class="align-items-center " style="width: 90%!important;">
-                                <span class="fw-bold mb-2">${cust_name}</span>
+                                <span id="${id_numb[1]}" class="fw-bold mb-2">${cust_name}</span>
                                 <div class="small text-truncate mt-2">${cust_message}</div>
-                              </div>
+                                </div>
                             </button>
                           </h3>
-                          <div id="flush-collapseThree-choose" class="accordion-collapse collapse" aria-labelledby="flush-headingThree-choose" data-bs-parent="#accordionFlush-choose">
+                          <div id="flush-${id_numb[1]}-choose" class="accordion-collapse collapse" aria-labelledby="heading-${id_numb[1]}-choose" data-bs-parent="#accordionFlush-choose">
                             <div class="accordion-body">
                               <p>${cust_message}</p>
                               <div class="d-grid gap-2">
@@ -419,53 +459,91 @@
                                 <button type="button" class="btn btn-outline-success d-block btn-done">Selesai Jawab</button>
                               </div>
                             </div>
-                            
                           </div>
                         </div>`
 
           $("#accordionFlush-choose").append(elements);
-          // console.log("."+parent_class[0]+"."+parent_class[1])
-          // $("."+parent_class[0]+"."+parent_class[1]).remove()
           $("#"+parent_element).remove()
+          console.log(parent_element)
           counter()
         })
- 
-        // console.log($(".btn-delete").text())
-        // $("body").on("click", "#boundOnPageLoaded", function(){
-        //   alert("Delegated Button Clicked")
-        // });
+
+        //fungsi pindah accordion ke section awal
         $("body").on("click", ".btn-delete", function() {
           var cust_name = $(this).parent().parent().parent().siblings().children().children().children('span').text()
           var cust_message = $(this).parent().parent().parent().siblings().children().children().children('div').text()
           var parent_element = $(this).parent().parent().parent().parent().attr('id')
-          // var parent_class = parent_element.split(" ");
 
+          //get id accordion header number
+          var id_accordion_header = $(this).parent().parent().parent().siblings().attr('id')
+          var id_numb = id_accordion_header.split("-")
+
+          //get customer id number
+          var id_customer = $(this).parent().parent().parent().siblings().children().children()
+
+          var id_accordion = $(this).parent().parent().parent().attr('id')
           console.log(parent_element)
-
-          let elements=`<div class="accordion-item" id="accordion-choose-item-2">
-                          <h3 class="accordion-header" id="flush-headingThree-choose">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree-choose" aria-expanded="false" aria-controls="flush-collapseThree-choose">
+          
+          $("#"+parent_element).remove()
+          let elements=`<div class="accordion-item" id="${parent_element}">
+                          <h3 class="accordion-header" id="heading-${id_numb[1]}">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-${id_numb[1]}" aria-expanded="false" aria-controls="flush-${id_numb[1]}">
                               <div class="align-items-center " style="width: 90%!important;">
-                                <span class="fw-bold mb-2">${cust_name}</span>
+                                <span class="fw-bold mb-2" id="${id_customer}">${cust_name}</span>
                                 <div class="small text-truncate mt-2">${cust_message}</div>
                               </div>
                             </button>
                           </h3>
-                          <div id="flush-collapseThree-choose" class="accordion-collapse collapse" aria-labelledby="flush-headingThree-choose" data-bs-parent="#accordionFlush-choose">
+                          <div id="flush-${id_numb[1]}" class="accordion-collapse collapse" aria-labelledby="heading-${id_numb[1]}" data-bs-parent="#accordionFlush">
                             <div class="accordion-body">
                               <p>${cust_message}</p>
                               <div class="d-grid gap-2">
                                 <button type="button" class="btn btn-outline-primary btn-choose">Pilih</button>
                               </div>
                             </div>
-                            
                           </div>
                         </div>`
 
           $("#accordionFlushExample").append(elements);
+          counter()
+        })
+
+        //fungsi pindah accordion ke section terjawab
+        $("body").on("click", ".btn-done", function() {
+          var cust_name = $(this).parent().parent().parent().siblings().children().children().children('span').text()
+          var cust_message = $(this).parent().parent().parent().siblings().children().children().children('div').text()
+          var parent_element = $(this).parent().parent().parent().parent().attr('id')
+
+          //get id accordion header number
+          var id_accordion_header = $(this).parent().parent().parent().siblings().attr('id')
+          var id_numb = id_accordion_header.split("-")
+
+          //get customer id number
+          var id_customer = $(this).parent().parent().parent().siblings().children().children()
+
+          var id_accordion = $(this).parent().parent().parent().attr('id')
+          console.log(parent_element)
+          
+          $("#"+parent_element).remove()
+          let elements=`<div class="accordion-item" id="${parent_element}">
+                          <h3 class="accordion-header" id="heading-${id_numb[1]}-answered">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-${id_numb[1]}-answered" aria-expanded="false" aria-controls="flush-${id_numb[1]}-answered">
+                              <div class="align-items-center " style="width: 90%!important;">
+                                <span id="${id_numb[1]}" class="fw-bold mb-2">${cust_name}</span>
+                                <div class="small text-truncate mt-2">${cust_message}</div>
+                                </div>
+                            </button>
+                            </h3>
+                          <div id="flush-${id_numb[1]}-answered" class="accordion-collapse collapse" aria-labelledby="heading-${id_numb[1]}-answered" data-bs-parent="#accordionFlush-answered">
+                            <div class="accordion-body">
+                              <p>${cust_message}</p>
+                            </div>
+                          </div>
+                        </div>`
+
+          $("#accordionFlush-answered").append(elements);
           // console.log("."+parent_class[0]+"."+parent_class[1])
           // $("."+parent_class[0]+"."+parent_class[1]).remove()
-          $("#"+parent_element).remove()
           counter()
         })
 

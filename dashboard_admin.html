@@ -145,6 +145,7 @@
         // moment.locale('id');
         var id_tiket = 1;
         var id_tiket_session = 1;
+        
         $.ajax({  
             url: url_ip+'/items/ticket?fields=ticket_id,ticket_type,ticket_x_session.session_id.*,ticket_x_day.day_id.*',  
             type: 'GET',  

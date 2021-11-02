@@ -233,7 +233,7 @@
         })
 
         //dapet data dari url untuk dapet ID customer 
-        let id_customer = 2;
+        let id_customer = 6;
         let name = ""
         $.ajax({  
             url: url_ip+'/items/customer',  
@@ -250,7 +250,7 @@
                 }
               }
               var customer_name = name.split(' ');
-              name = customer_name[0]
+              name = customer_name[0] +" "+ customer_name[1]
               console.log(name)
               $('#customer-name').text(name)
             },
